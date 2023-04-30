@@ -1,0 +1,5 @@
+<h2>Clear memory</h2>
+<form action="{% url 'clear_memory' %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Clear">
+</form>
